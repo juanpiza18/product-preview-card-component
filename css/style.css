@@ -1,0 +1,154 @@
+* {
+  padding: 0px;
+}
+
+body {
+  background: hsl(30, 38%, 92%);
+  min-height: 100vh;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section__card {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+}
+
+.section__image {
+  flex: 1 0 50%;
+  width: 300px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.section__image--product {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section__product {
+  flex: 1 0 50%;
+  width: 300px;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.product__information {
+  margin: 1.5rem;
+}
+
+.product__information--category {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.product__information--title {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+}
+
+.product__information--description {
+  font-size: 1rem;
+}
+
+.product__price {
+  display: flex;
+  align-items: center;
+}
+
+.product__price--saleprice {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+  margin-right: 1.3rem;
+}
+
+.product__price--listprice {
+  text-decoration: line-through;
+}
+
+.product__actions {
+  margin: 1rem;
+}
+
+.margin-small-left {
+  margin-left: 5px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.btn {
+  font-weight: 700;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 5px;
+  border-style: none;
+  height: 50px;
+  width: 100%;
+  transition: all 0.5s;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn--green {
+  color: hsl(0, 0%, 100%);
+  background: hsl(158, 36%, 37%);
+}
+
+.btn:hover {
+  background: hsl(158, 45%, 20%);
+}
+
+.btn:active {
+  box-shadow: 2px 2px 5px hsl(212, 21%, 14%);
+}
+
+/* Style front end challege copyright*/
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: hsl(212, 21%, 14%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 800px) {
+  .section__card {
+    flex-direction: column;
+  }
+
+  .section__image {
+    border-radius: 20px 20px 0 0;
+    flex: 0;
+    height: 250px;
+  }
+
+  .section__image--product {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .section__product {
+    flex: unset;
+    border-radius: 0 0 20px 20px;
+  }
+}
